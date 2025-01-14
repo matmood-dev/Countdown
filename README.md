@@ -64,8 +64,8 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Demo
 
-work-countdown.netlify.app
-
+[work-countdown.netlify.app
+](https://work-countdown.netlify.app/)
 
 ## Screenshots
 
