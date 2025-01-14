@@ -64,10 +64,10 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Demo
 
-Insert gif or link to demo
+work-countdown.netlify.app
 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](images/screenshot.png)
 
