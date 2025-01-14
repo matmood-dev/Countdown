@@ -19,7 +19,7 @@ This React application allows users to enter their start time and view a countdo
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/workday-countdown.git
+    git clone https://github.com/matmood-dev/workday-countdown.git
     ```
 2. Navigate to the project directory:
     ```sh
@@ -64,10 +64,10 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Demo
 
-Insert gif or link to demo
-
+[work-countdown.netlify.app
+](https://work-countdown.netlify.app/)
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](images/screenshot.png)
 
