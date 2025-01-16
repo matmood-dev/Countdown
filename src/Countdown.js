@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './Countdown.css';
 
-function Countdown({ startTime }) {
+function Countdown({ startTime, workdayDuration }) {
   const [endTime, setEndTime] = useState(null);
   const [timeLeft, setTimeLeft] = useState('');
 
   useEffect(() => {
     if (startTime) {
       const end = new Date(startTime);
-      end.setHours(end.getHours() + 8);
-      end.setMinutes(end.getMinutes() + 30);
+      const hours = Math.floor(workdayDuration);
+      const minutes = (workdayDuration - hours) * 60;
+      end.setHours(end.getHours() + hours);
+      end.setMinutes(end.getMinutes() + minutes);
       setEndTime(end);
 
       const interval = setInterval(() => {
@@ -28,12 +30,13 @@ function Countdown({ startTime }) {
 
       return () => clearInterval(interval);
     }
-  }, [startTime]);
+  }, [startTime, workdayDuration]);
 
   return (
     <div className="countdown">
       <h2>Countdown to End of Workday</h2>
-      <p>{timeLeft}</p>
+      <h5>{timeLeft}</h5>
+      {endTime && <p>Your work finishes at: {endTime.toLocaleTimeString()}</p>}
     </div>
   );
 }

@@ -4,9 +4,14 @@ import Countdown from './Countdown';
 
 function Home() {
   const [startTime, setStartTime] = useState('');
+  const [workdayDuration, setWorkdayDuration] = useState(8.5); // Default to 8.5 hours
 
   const handleStartTimeChange = (e) => {
     setStartTime(e.target.value);
+  };
+
+  const handleWorkdayDurationChange = (e) => {
+    setWorkdayDuration(parseFloat(e.target.value));
   };
 
   return (
@@ -21,8 +26,15 @@ function Home() {
             Enter the start time:
             <input type="datetime-local" value={startTime} onChange={handleStartTimeChange} />
           </label>
+          <label>
+            Select workday duration:
+            <select value={workdayDuration} onChange={handleWorkdayDurationChange}>
+              <option value={8.0}>8 hours</option>
+              <option value={8.5}>8.5 hours</option>
+            </select>
+          </label>
         </div>
-        {startTime && <Countdown startTime={new Date(startTime)} />}
+        {startTime && <Countdown startTime={new Date(startTime)} workdayDuration={workdayDuration} />}
       </header>
     </div>
   );
