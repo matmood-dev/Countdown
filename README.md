@@ -2,6 +2,10 @@
 
 Workday Countdown is a simple React application that allows users to enter their start time and choose the duration of their workday. It then provides a countdown to the end of their workday and displays the exact end time.
 
+## Demo
+
+https://work-countdown.netlify.app
+
 ## Features
 
 - Enter your start time using a datetime input.
