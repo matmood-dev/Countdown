@@ -1,48 +1,28 @@
 .countdown {
-  margin-top: 10px; /* Reduced margin */
-  padding: 10px; /* Reduced padding */
-  background: #ffffff;
-  border-radius: 8px; /* Reduced border radius */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
-  transition: all 0.3s ease;
-}
-
-.countdown:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted box shadow */
-}
-
-.countdown h2 {
-  font-size: 1rem; /* Further reduced font size */
-  margin-bottom: 8px; /* Reduced margin */
-  color: #1e2a38;
-}
-
-.countdown h5 {
-  font-size: 2rem; /* Adjusted font size */
-  margin-bottom: 8px; /* Reduced margin */
-  color: #1e2a38;
-}
-
-.countdown p {
-  font-size: 1rem; /* Keep font size consistent */
-  color: #555;
-  margin: 3px 0; /* Further reduced margin */
-}
-
-@media (max-width: 600px) {
-  .countdown {
-    padding: 8px; /* Reduced padding for mobile */
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
+  
   .countdown h2 {
-    font-size: 0.9rem; /* Adjusted font size for mobile */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
   }
-
-  .countdown h5 {
-    font-size: 1.2rem; /* Adjusted font size for mobile */
+  
+  .countdown h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #000;
   }
-
+  
   .countdown p {
-    font-size: 0.9rem; /* Adjusted font size for mobile */
+    font-size: 3rem;
+    color: #555;
   }
-}
+  
+  .countdown strong {
+    color: #ff0000;
+  }
